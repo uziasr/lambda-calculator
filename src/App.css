@@ -1,15 +1,24 @@
+/* html{
+    box-sizing: border-box;
+} */
+
+.logo{
+    width:40%;
+    padding: 6% 4% 2% 4%;
+}
 .container {
     background-color: #c00025;
-    width: 100%;
+    width: 20%;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    box-sizing: border-box;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    /* margin-top: 25px; */
+    height: 8vh;
+    width: 80%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -18,5 +27,69 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 3.0rem;
+    margin: 2% auto;
+  }
+
+.operator{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+}
+
+div.calcWrap{
+    display:flex;
+    flex-wrap: flex;
+    justify-content: center;
+    margin-top: 4%;
+    /* height: 60%; */
+    
+}
+ button{
+    /* width:30%;
+    border-radius: 90%;
+    height: 50%; */
+    background: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}
+
+button.operator{
+    width:100%;
+    background:rgb(61,181,229);
+}
+.rightHand{
+    width: 20%;
+}
+.leftHand{
+    /* width:100%; */
+    width:75%;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    
+}
+.leftHand button{
+    width: 28%;
+}
+
+/* colors */
+.special{
+    background: rgb(32,97,176);
+}
+.number{
+    background:rgb(17,60,120);
+}
+.number:nth-child(10n) {
+    width: 60%;
+    border-radius: 35%;
   }
